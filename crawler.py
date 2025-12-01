@@ -28,7 +28,11 @@ def run_crawler(domain, username, password, output_file="webterminals.xlsx", log
         session = requests.Session()
         session.trust_env = False
         session.headers.update(HEADERS)
-
+        """
+        Rails 认为：
+        任何没有 token 的 POST 请求 == 可疑攻击
+        所以必须带上，否则登录不能成功。
+        """
         resp = session.get(LOGIN_ENTRY_URL, allow_redirects=True)
         soup = BeautifulSoup(resp.text, "html.parser")
 

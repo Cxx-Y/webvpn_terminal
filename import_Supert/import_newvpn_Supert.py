@@ -1,3 +1,7 @@
+"""
+ c--Y
+pip install requests  pandas openpyxl
+"""
 import requests
 import pandas as pd
 import urllib3

@@ -1,0 +1,5 @@
+此程序只针对瑞智康诚新版webvpn用来批量导入超级终端，结合导出旧版超级终端的程序配合使用
+直接运行python3 import_newvpn_Supert.py
+请输入访问地址: https://webvpn.richcache.com:40000
+请输入 token: （从浏览器复制的 token）
+请输入 Excel 文件路径: /Users/cy/Desktop/list.xlsx

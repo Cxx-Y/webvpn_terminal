@@ -27,7 +27,7 @@ def get_super_ts_id(base_url, token):
 
 def import_from_excel(base_url, token, excel_path):
     # 读取 Excel
-    df = pd.read_excel(excel_path)
+    df = pd.read_excel(excel_path,engine='openpyxl')
 
     # 检查必要列
     required_cols = ["name", "ip", "protocol", "port"]

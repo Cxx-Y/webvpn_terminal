@@ -92,11 +92,11 @@ def run_crawler(domain, username, password, output_file="webterminals.xlsx", log
                     continue
 
                 row = {
-                    "名称": tds[0].get_text(strip=True),
-                    "IP": tds[1].get_text(strip=True),
-                    "协议": tds[2].get_text(strip=True),
-                    "端口": tds[3].get_text(strip=True),
-                    "用户名": tds[4].get_text(strip=True),
+                    "name": tds[0].get_text(strip=True),
+                    "ip": tds[1].get_text(strip=True),
+                    "protocol": tds[2].get_text(strip=True),
+                    "port": tds[3].get_text(strip=True),
+                    "username": tds[4].get_text(strip=True),
                 }
                 results.append(row)
 
